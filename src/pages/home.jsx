@@ -30,7 +30,7 @@ function Home() {
         <div className='second-section'> 
             <div className='inline-image'>
                 <div>
-                    <h1 className='second-section__motive'>UpSkill Yourself with TECHTITUDE</h1>
+                    <p className='second-section__motive'>UpSkill Yourself <i>with</i> TECHTITUDE</p>
                     <p className="second-section__talk">We empower <b>WOMEN</b> with the topicalskills and knowledge to become tech leaders.</p>
                     <div className='second-section__button' onClick={() => route('/registration') }>SIGN UP NOW</div>
                 </div>
