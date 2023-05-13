@@ -39,23 +39,23 @@ function Home() {
         </div>
         <div className='third-section'>
             <div className='third-section__profile'>
-                <div className='third-section__profile__img'><img src='/images/internship.png' /></div>
-                <h6>Internship</h6>
+                <div className='third-section__profile__img'><img src='/images/internship.png' /></div> <br />
+                <h6>Internship</h6><br />
                 <p>Our academy provides internship opportunities to our students, allowing them to gain practical experience in a real-world setting. This helps students apply theoretical knowledge in practical situations and develop skills that employers seek.</p>
             </div>
             <div className='third-section__profile'>
-                <div className='third-section__profile__img'><img src='/images/mentor.png' /></div>
-                <h6 className='person-name'>Mentorship</h6>
+                <div className='third-section__profile__img'><img src='/images/mentor.png' /></div> <br />
+                <h6 className='person-name'>Mentorship</h6> <br />
                 <p>Our experienced mentors guide students through their tech journey, providing advice, support, and feedback. This helps our students build confidence, acquire new skills, and gain insights into the tech industry.</p>
             </div>
             <div className='third-section__profile'>
-                <div className='third-section__profile__img'><img src="/images/vc.png"  /></div>
-                <h6 className='person-name'>CV Revamp</h6>
+                <div className='third-section__profile__img'><img src="/images/vc.png"  /></div> <br />
+                <h6 className='person-name'>CV Revamp</h6> <br />
                 <p>We help students revamp their resumes to showcase their skills, achievements, and projects. This improves their chances of getting noticed by potential employers and getting hired for tech roles.</p>
             </div>
             <div className='third-section__profile'>
-                <div className='third-section__profile__img'><img src="/images/pro.png" /></div>
-                <h6 className='person-name'>Real Life Project</h6>
+                <div className='third-section__profile__img'><img src="/images/pro.png" /></div> <br />
+                <h6 className='person-name'>Real Life Project</h6> <br />
                 <p>We assign real-life projects to our students, allowing them to apply their knowledge and skills to solve real-world problems. This helps our students develop critical thinking, problem-solving, and teamwork skills, and prepares them for future roles in tech.</p>
             </div>
         </div>
