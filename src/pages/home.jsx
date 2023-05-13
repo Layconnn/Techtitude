@@ -191,7 +191,7 @@ function Home() {
                         <p className='fifth-section__layout__edit__message'>Data Analysis will  help you differentiate yourself from other information technology and research workers who lack the same specialized knowledge as you. During your job search, you may have more job opportunities to pursue or qualify for more specialized positions</p>
                         <div className='fifth-section__layout__edit__lower-sec'>
                             <div className='fifth-section__layout__edit__lower-sec__btns'> 
-                                <div className='fifth-section__layout__edit__lower-sec__btns__btn1'>Enroll Now!</div>
+                                <div className='fifth-section__layout__edit__lower-sec__btns__btn1' onClick={() => route('/registration')}>Enroll Now!</div>
                                 <div className='fifth-section__layout__edit__lower-sec__btns__btn2'>Download Brochure</div>
                             </div>
                             <p className='fifth-section__layout__edit__lower-sec__price'>#150,000</p>
@@ -207,7 +207,7 @@ function Home() {
                         <p className='fifth-section__layout__edit__message'>Business Analysis will  help you differentiate yourself from other information technology and research workers who lack the same specialized knowledge as you. During your job search, you may have more job opportunities to pursue or qualify for more specialized positions</p>
                         <div className='fifth-section__layout__edit__lower-sec'>
                             <div className='fifth-section__layout__edit__lower-sec__btns'> 
-                                <div className='fifth-section__layout__edit__lower-sec__btns__btn1'>Enroll Now!</div>
+                                <div className='fifth-section__layout__edit__lower-sec__btns__btn1' onClick={() => route('/registration')}>Enroll Now!</div>
                                 <div className='fifth-section__layout__edit__lower-sec__btns__btn2'>Download Brochure</div>
                             </div>
                             <p className='fifth-section__layout__edit__lower-sec__price'>#150,000</p>
@@ -223,7 +223,7 @@ function Home() {
                         <p className='fifth-section__layout__edit__message'>Data Analysis will  help you differentiate yourself from other information technology and research workers who lack the same specialized knowledge as you. During your job search, you may have more job opportunities to pursue or qualify for more specialized positions</p>
                         <div className='fifth-section__layout__edit__lower-sec'>
                             <div className='fifth-section__layout__edit__lower-sec__btns'> 
-                                <div className='fifth-section__layout__edit__lower-sec__btns__btn1'>Enroll Now!</div>
+                                <div className='fifth-section__layout__edit__lower-sec__btns__btn1' onClick={() => route('/registration')}>Enroll Now!</div>
                                 <div className='fifth-section__layout__edit__lower-sec__btns__btn2'>Download Brochure</div>
                             </div>
                             <p className='fifth-section__layout__edit__lower-sec__price'>#100,000</p>
@@ -239,7 +239,7 @@ function Home() {
                         <p className='fifth-section__fourth-layout__edit__message'>Learn the skills to create visually appealing and user-friendly interfaces. Our UI/UX Design track will teach you the principles of design, user research, wireframing, prototyping, and more. You'll gain practical experience by completing a variety of tasks, including designing web and mobile applications, creating user personas, and conducting usability testing.</p>
                         <div className='fifth-section__fourth-layout__edit__lower-sec'>
                             <div className='fifth-section__fourth-layout__edit__lower-sec__btns'> 
-                                <div className='fifth-section__fourth-layout__edit__lower-sec__btns__btn1'>Enroll Now!</div>
+                                <div className='fifth-section__fourth-layout__edit__lower-sec__btns__btn1' onClick={() => route('/registration')}>Enroll Now!</div>
                                 <div className='fifth-section__fourth-layout__edit__lower-sec__btns__btn2'>Download Brochure</div>
                             </div>
                             <p className='fifth-section__fourth-layout__edit__lower-sec__price'>#150,000</p>
@@ -255,7 +255,7 @@ function Home() {
                         <p className='fifth-section__layout__edit__message'>Data Analysis will  help you differentiate yourself from other information technology and research workers who lack the same specialized knowledge as you. During your job search, you may have more job opportunities to pursue or qualify for more specialized positions</p>
                         <div className='fifth-section__layout__edit__lower-sec'>
                             <div className='fifth-section__layout__edit__lower-sec__btns'> 
-                                <div className='fifth-section__layout__edit__lower-sec__btns__btn1'>Enroll Now!</div>
+                                <div className='fifth-section__layout__edit__lower-sec__btns__btn1' onClick={() => route('/registration')}>Enroll Now!</div>
                                 <div className='fifth-section__layout__edit__lower-sec__btns__btn2'>Download Brochure</div>
                             </div>
                             <p className='fifth-section__layout__edit__lower-sec__price'>#150,000</p>
