@@ -2,19 +2,28 @@
 .first-section{
     &__nav{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        padding-left: 17rem;
+        padding-right: 16rem;
+        margin: auto;
         margin-top: 7.2rem;
         &__content{
             display: flex;
-            gap: 3rem;
-            p{
-                font-size: 1.6rem;
-                font-weight: 600;
-                margin-top: 1.2rem;
+            gap: 7rem;
+            &__texts{
+                display: flex;
+                justify-content: space-around;
+                gap: 2rem;
+                p{
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    margin-top: 1.2rem;
+                }
             }
             &__button{
                 color: white;
+                cursor: pointer;
                 font-size: 1.8rem;
                 padding-bottom: 5rem;
                 outline: none;
@@ -44,6 +53,7 @@
     border: 0.2rem solid #CCCCFF;
     &__button{
         color: white;
+        cursor: pointer;
         font-size: 2.4rem;
         font-weight: 700;
         width: 20.4rem;
@@ -138,7 +148,7 @@
         color: #FFFFFF;
     }
     &__all-rating{
-        width: 117.3rem;
+        width: 100%;
         margin-top: 2.7rem;
         margin: auto;
         display: flex;
@@ -146,13 +156,15 @@
         gap: 2.7rem;
     }
     &__first-rating{
+        width: 116.8rem;
+        height: 24.1rem;
+        margin: auto;
         background-color: white;
-        height: 33.9rem;
         border-radius: 1.2rem;
         padding: 1.7rem 1.7rem 1.2rem 1.2rem;
         h6{
-            width: 23.7rem;
-            height: 23.4rem;
+            width: 108.9rem;
+            height: 14rem;
             font-size: 1.4rem;
             font-weight: 500;
         }
@@ -418,11 +430,12 @@ h3{
             width: 46.4rem;
             display: flex;
             flex-direction: column;
-            gap: 4.6rem;
+            gap: 3rem;
             margin-left: -9rem;
-            &__contact{
-                display: flex;
-                justify-content: space-between;
+            h6{
+                font-size: 1.8rem;
+                font-weight: 700;  
+                color: white;
             }
             &__description{
                 display: flex;
@@ -478,10 +491,9 @@ h3{
         }
     }
     hr{
-        border: 0.1rem solid #FFFFFF;
-        color: white;
+        border: 0.1rem solid lightgrey;
         margin: auto;
-        width: 117.3rem;
+        width: 118rem;
         margin-top: 5.507rem;
     }
     p{

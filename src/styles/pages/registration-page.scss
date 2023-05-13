@@ -1,3 +1,83 @@
 .registration-page{
-    background-color: #F5F5F5;;
+    background-color: #F5F5F5;
+    &__container{
+        margin: auto;
+        width: 90.8rem;
+        img{
+            margin-top: 7.8rem;
+        }
+        &__nav{
+            h2{
+                font-weight: 700;
+                font-size: 4.8rem;
+                color: #805CA5;
+                margin-top: 4.8rem;
+            }
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0.6rem;
+                font-size: 2.4rem;
+                margin-top: 1.2rem;
+                background: linear-gradient(274.67deg, #4F92CE 54.08%, #4F92CE 122.01%);
+                color: white;
+                width: 32rem;
+                height: 5.2rem;
+                cursor: pointer;
+            }
+        }
+        &__information{
+            margin-top: 3.6rem;
+            label{
+                font-weight: 400;
+                font-size: 2rem;
+                color: #333333;
+            }
+            &__input{
+                display: flex;
+                flex-wrap: wrap;
+                width: 90.8rem;
+                height: 4rem;
+                padding-left: 1.4rem;
+                font-weight: 400;
+                border-radius: 0.6rem;
+                border: 0.07rem solid #37014F;
+                font-size: 1.8rem;
+            }
+            fieldset{
+                padding-top: 2.4rem;
+                padding-left: 1.4rem;
+                border: 0.07rem solid #37014F;
+                padding-bottom: 1.4rem;
+                border-radius: 0.6rem;
+                background-color: white;
+            }
+            &__response{
+                display: flex;
+                flex-wrap: wrap;
+                width: 90.8rem;
+                height: 4rem;
+                padding-left: 1.4rem;
+                font-weight: 400;
+                border-radius: 0.6rem;
+                border: 0.07rem solid #37014F;
+                font-size: 1.8rem;
+            }
+            &__submit{
+                display: flex;
+                cursor: pointer;
+                justify-content: center;
+                align-items: center;
+                background: #F0C20C;
+                font-weight: 700;
+                border-radius: 0.6rem;
+                font-size: 1.8rem;
+                width: 13.9rem;
+                color: #37014F;
+                height: 3.7rem;
+            }
+        }
+    }
+    
 }

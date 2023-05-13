@@ -1,7 +1,8 @@
-{/*import React from 'react'
+import React from 'react'
 import Home from '../pages/home';
 import RegistrationPage from '../pages/registrationPage';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NoPage from '../pages/noPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function Router() {
   return (
@@ -17,4 +18,4 @@ function Router() {
   )
 }
 
-export default Router */}
+export default Router 
