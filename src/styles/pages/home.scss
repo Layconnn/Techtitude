@@ -1,13 +1,12 @@
 
+
 .first-section{
     &__nav{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 50rem;
         align-items: center;
-        padding-left: 17rem;
-        padding-right: 16rem;
-        margin: auto;
-        margin-top: 7.2rem;
+        padding-top: 7.2rem;
         &__content{
             display: flex;
             gap: 7rem;
@@ -43,9 +42,9 @@
 .second-section{
     margin: auto;
     width: 120rem;
+    padding-left: 6.9rem;
     position: relative;
     height: 49.6rem;
-    padding-left: 6.9rem;
     margin-top: 10rem;
     padding-top: 7.2rem;
     box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.15);
@@ -81,51 +80,51 @@
         color: #1E2027;
     }
     &__girl-picture{
-        margin-top: -15rem;
+        margin-top: -15.2rem;
         height: 57.4rem;
         padding-left: 8rem;
     }
 }
 .third-section{
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-top: 5.2rem;
     gap: 2.2rem;
     &__profile{
     display: flex;
     flex-direction: column;
-    width: 28.1rem;
     height: 32.5rem;
     border: 2px solid #CCCCFF;
-    padding: 2.2rem 1.8rem 1.1rem 1,9;
+    padding: 2.2rem 1.8rem 0 1.9rem;
     justify-content: center;
     align-items: center;
     background-color: rgba(204, 204, 255, 0.25);
     border-radius: 1.2rem;
-    &__img{
-        background-color: #4F92CE;
-        height: 7.2rem;
-        width: 7.2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-    }
-    h6{
-        font-size: 2rem;
-        font-weight: 700;
-        color: #37014F;
-        line-height: 2.514rem;
-        text-align: center;
-    }
-    p{
-        width: 24.4rem;
-        height: 18rem;
-        font-weight: 400;
-        text-align: center;
-        font-size: 1.2rem;
-        line-height: 20px;
-    }
+        &__img{
+            background-color: #4F92CE;
+            height: 7.2rem;
+            width: 7.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        h6{
+            font-size: 2rem;
+            font-weight: 700;
+            color: #37014F;
+            text-align: center;
+        }
+        p{
+            width: 24.4rem;
+            height: 18rem;
+            font-weight: 400;
+            text-align: center;
+            color: rgba(51, 51, 51, 0.5);
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
     }
 }
 .fourth-section{
@@ -160,18 +159,35 @@
         width: 116.8rem;
         height: 24.1rem;
         margin: auto;
+        margin-bottom: 5rem;
         background-color: white;
         border-radius: 1.2rem;
-        padding: 1.7rem 1.7rem 1.2rem 1.2rem;
-        h6{
-            width: 108.9rem;
-            height: 14rem;
-            font-size: 1.4rem;
-            font-weight: 500;
+        padding: 1.7rem 1.7rem 2rem 3rem;
+        &__star{
+            margin-bottom: 1rem;
         }
-        &__appreciation{
-            font-weight: 500;
-            font-size: 1.4rem;
+        &__message{
+            height: 14rem;
+            display: flex;
+            width: 108.9rem;
+            flex-direction: column;
+            justify-content: space-between;
+            h6{
+                font-size: 1.4rem;
+                font-weight: 300;
+                color: #333333;
+            }
+            &__speech{
+                font-weight: 300;
+                font-size: 1.4rem;
+                color: #333333;
+            }
+            &__appreciation{
+                font-weight: 300;
+                padding-bottom: 2rem;
+                font-size: 1.4rem;
+                color: #333333;
+            }
         }
         &__bottom{
             display: flex;
@@ -182,10 +198,15 @@
                 border-radius: 0.8rem;
                 background-color: #F0C20C;
             }
-            &__bottom-name{
+            &__name{
                 font-size: 1.8rem;
                 font-weight: 700;
                 color: #333333;
+            }
+            &__description{
+                color: rgba(51, 51, 51, 0.5);
+                font-weight: 500;
+                font-size: 1.2rem;
             }
         }
         
@@ -252,9 +273,9 @@ h3{
         border-radius: 12px;
         &__edit{
             display: flex;
-            gap: 0.7rem;
-            &__image{
-                width: 17rem;
+            gap: 2.2rem;
+            img{
+                max-width: 14rem;
             }
             &__type{
                 color: #F0C20C;
@@ -266,7 +287,7 @@ h3{
                 height: 6.0rem;
                 font-weight: 500;
                 color: white;
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
             &__lower-sec{
                 display: flex;
@@ -278,8 +299,8 @@ h3{
                     &__btn1{
                         background-color: white;
                         display: flex;
-                        width: 12rem;
                         font-size: 1.8rem;
+                        cursor: pointer;
                         font-weight: 700;
                         border-radius: 0.6rem;
                         padding: 0.7rem 0.9rem 0.5rem 0.9rem;
@@ -291,7 +312,6 @@ h3{
                         background-color: #805CA5;
                         display: flex;
                         color: white;
-                        width: 19.2rem;
                         font-weight: 700;
                         border: 0.1rem solid #FFFFFF;
                         justify-content: center;
@@ -310,17 +330,11 @@ h3{
                 }
             }
         }
-    }
-    &__fourth-layout{
-        background-color: #805CA5;
-        padding: 2.1rem 3.8rem 2.4rem 2.5rem;
-        border-radius: 12px;
-        height: 20rem;
-        &__edit{
+        &__edit2{
             display: flex;
-            gap: 0.7rem;
-            &__image{
-                width: 17rem;
+            gap: 2.6rem;
+            img{
+                max-width: 14.2rem;
             }
             &__type{
                 color: #F0C20C;
@@ -332,21 +346,20 @@ h3{
                 height: 6.0rem;
                 font-weight: 500;
                 color: white;
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
             &__lower-sec{
                 display: flex;
                 justify-content: space-between;
-                margin-top: 2.8rem;
                 &__btns{
                     display: flex;
                     gap: 1.1rem;
-                    
+                    margin-top: 2.1rem;
                     &__btn1{
                         background-color: white;
                         display: flex;
-                        width: 12rem;
                         font-size: 1.8rem;
+                        cursor: pointer;
                         font-weight: 700;
                         border-radius: 0.6rem;
                         padding: 0.7rem 0.9rem 0.5rem 0.9rem;
@@ -358,7 +371,6 @@ h3{
                         background-color: #805CA5;
                         display: flex;
                         color: white;
-                        width: 19.2rem;
                         font-weight: 700;
                         border: 0.1rem solid #FFFFFF;
                         justify-content: center;
@@ -376,13 +388,72 @@ h3{
                     margin-top: 2.1rem;
                 }
             }
-        }
+        }     
+        &__edit3{
+            display: flex;
+            gap: 3.4rem;
+            img{
+                width: 13rem;
+            }
+            &__type{
+                color: #F0C20C;
+                font-weight: 700;
+                font-size: 2.4rem;
+            }
+            &__message{
+                width: 94.8rem;
+                height: 6.0rem;
+                font-weight: 500;
+                color: white;
+                font-size: 1.6rem;
+            }
+            &__lower-sec{
+                display: flex;
+                justify-content: space-between;
+                &__btns{
+                    display: flex;
+                    gap: 1.1rem;
+                    margin-top: 2.5rem;
+                    &__btn1{
+                        background-color: white;
+                        display: flex;
+                        font-size: 1.8rem;
+                        cursor: pointer;
+                        font-weight: 700;
+                        border-radius: 0.6rem;
+                        padding: 0.7rem 0.9rem 0.5rem 0.9rem;
+                        color: #805CA5;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    &__btn2{
+                        background-color: #805CA5;
+                        display: flex;
+                        color: white;
+                        font-weight: 700;
+                        border: 0.1rem solid #FFFFFF;
+                        justify-content: center;
+                        padding: 0.7rem 0.9rem 0.5rem 0.9rem;
+                        align-items: center;
+                        border-radius: 0.6rem;
+                        font-size: 1.8rem;
+                    }
+                }
+                
+                &__price{
+                    font-weight: 700;
+                    font-size: 1.8rem;
+                    color: #F0C20C;
+                    margin-top: 2.1rem;
+                }
+            }
+        }   
     }
 }
 .sixth-section{
     background-color: rgba(204, 204, 255, 0.25);
     margin-top: 5.9rem;
-    padding-top: 6.5rem;
+    padding-top: 3rem;
     padding-bottom: 5.6rem;
     &__body{
         h5{
@@ -421,31 +492,36 @@ h3{
     padding-bottom: 4.5rem;
     padding-left: 12rem;
     padding-right: 14.7rem;
+    img{
+        height: 10.3rem;
+    }
     &__bottom{
         display: flex;
+        justify-content: center;
         align-items: center;
-        margin: auto;
-        justify-content: space-between;
-        width: 117.3rem;
+        gap: 7.5rem;
         &__class{
-            width: 46.4rem;
             display: flex;
             flex-direction: column;
-            gap: 3rem;
-            margin-left: -9rem;
-            h6{
-                font-size: 1.8rem;
-                font-weight: 700;  
-                color: white;
+            gap: 4.6rem;
+            padding-top: 2.5rem;
+            &__links{
+                display: flex;
+                gap: 7.2rem;
+                h6{
+                    font-size: 1.8rem;
+                    font-weight: 500;  
+                    color: white;
+                }
             }
             &__description{
                 display: flex;
                 flex-direction: column;
                 h6{
-                    width: 35.8rem;
-                    font-weight: 500;
+                    font-weight: 200;
                     color: #FFFFFF;
-                    font-size: 1.8rem;
+                    font-size: 1.4rem;
+                    line-height: 18px;
                 }
             }
             
@@ -453,8 +529,9 @@ h3{
         &__input{
             display: flex;
             flex-direction: column;
+            padding-top: 1.4rem;
             h6{
-                font-weight: 500;
+                font-weight: 400;
                 font-size: 1.8rem;
                 color: white;
             }
@@ -463,19 +540,21 @@ h3{
                 input{
                     width: 44rem;
                     height: 6.3rem;
-                    padding: 1.2rem 1.1rem 1.7rem 1.1rem;
+                    padding: 1.2rem 13.8rem 1.7rem 1.1rem;
                     border-radius: 0.8rem;
+                    font-family: 'BR Firma';
+                    outline: none;
                     border: 2px solid #805CA5;
                     font-size: 1.8rem;
                 }
-                button{
+                &__button{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     margin-top: 1rem;
-                    padding-left: 0.9rem;
-                    padding-right: 1.2rem;
-                    border: 2px solid white;
+                    font-family: 'BR Firma';
+                    width: 11.7rem;
+                    height: 4rem;
                     margin-bottom: 1rem;
                     margin-left: -13rem;
                     font-size: 1.8rem;
@@ -494,14 +573,14 @@ h3{
     hr{
         border: 0.1rem solid lightgrey;
         margin: auto;
-        width: 118rem;
+        max-width: 120rem;
         margin-top: 5.507rem;
     }
     p{
-        font-weight: 400;
+        font-weight: 300;
         font-size: 1.8rem;
         text-align: center;
-        color: white;
+        color: #ffffff;
         margin-top: 2.7rem;
     }
 }

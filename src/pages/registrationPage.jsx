@@ -1,7 +1,32 @@
 import React from 'react'
 import Input from '../components/input'
+import { useState } from 'react'
+import axios from 'axios'
 
 function RegistrationPage() {
+const [data, setData] = useState({
+  name: '',
+  quantity: '',
+  image: '',
+  price: ''
+})
+
+const handleChange = (e) => {
+  const value = e.target.value;
+  setData({...data, [e.target.name]: value});
+}
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  const userInfo = {
+    name: data.name,
+    quantity: data.quantity,
+    image: data.image,
+    price: data.price,
+  };
+    axios.post('https://products-curd-api.netlify.app/.netlify/functions/api/products', userInfo ).then((response) => {console.log(response.data.status)} );
+};
+
   return (
     <>
         <div className='registration-page'>
@@ -12,33 +37,36 @@ function RegistrationPage() {
               <div>COURSE REGISTRATION</div>
             </div>
             <div className='registration-page__container__information'>
-              <form action="">
+              <form onSubmit={handleSubmit}>
                 <label>First Name</label><br/>
                   <Input 
+                  value={data.name}
                   type='text'
-                  required
+                  onChange={handleChange}
                   placeholder='e.g. Daniel'
                   className='registration-page__container__information__input'
                   /><br /><br /><br /><br />
                 <label>Last Name</label><br/>
                   <Input 
+                  value={data.quantity}
                   type='text'
-                  required
+                  onChange={handleChange}
                   placeholder='e.g. Olabanji'
                   className='registration-page__container__information__input'
                   /><br /><br /><br /><br />
                 <label>Email</label><br/>
                   <Input 
-                  type='email'
-                  required
+                  value={data.image}
+                  onChange={handleChange}
                   placeholder='e.g. daniel.olabanji@gmail.com'
                   className='registration-page__container__information__input'
                   /><br /><br /><br /><br />
                 <label>Phone Number</label><br/>
                   <Input 
+                  value={data.price}
                   type='number'
+                  onChange={handleChange}
                   placeholder='e.g. 09012345678'
-                  required
                   className='registration-page__container__information__input'
                   /><br /><br /><br /><br />
                 <label>Date of Birth</label><br/>
@@ -48,40 +76,53 @@ function RegistrationPage() {
                   /><br /><br /><br /><br />
                 <label>Courses Interested In</label><br />
                 <fieldset>
-                  <Input 
+                <label><Input 
+                  name= 'course'
                   type='radio'
-                  />&nbsp;&nbsp;&nbsp;<label>Business Analysis</label><br /><br /><br />
-                  <Input 
+                  />Business Analysis</label><br /><br /><br />
+                  <label><Input 
+                  name= 'course'
                   type='radio'
-                  />&nbsp;&nbsp;&nbsp;<label>Business Analytics</label><br /><br /><br />
-                  <Input 
+                  />Business Analytics</label><br /><br /><br />
+                  <label><Input 
+                  name= 'course'
                   type='radio'
-                  />&nbsp;&nbsp;&nbsp;<label>Scrum Master</label><br /><br /><br />
-                  <Input 
+                  />Scrum Master</label><br /><br /><br />
+                  <label><Input 
                   type='radio'
-                  />&nbsp;&nbsp;&nbsp;<label>Cyber Security</label><br /><br /><br />
-                  <Input 
+                  name= 'course'
+                  />Cyber Security</label><br /><br /><br />
+                  <label><Input 
+                  name= 'course'
                   type='radio'
-                  />&nbsp;&nbsp;&nbsp;<label>UI/UX Design</label><br /><br /><br />
+                  />UI/UX Design</label><br /><br /><br />
                 </fieldset><br /><br /><br /><br />
                 <label>Any Special Requirments and Requests</label><br />
-                <Input type='text' className='registration-page__container__information__response' placeholder='Your answer' /><br /><br /><br /><br />
+                <Input type='text' value={data.requests} className='registration-page__container__information__response' onChange={handleChange} placeholder='Your answer' /><br /><br /><br /><br />
                 <label>How did you hear about this Course</label>
                 <fieldset>
-                  <Input 
+                <label><Input 
+                  name='referral'
+                  id='friends'
                   type='radio'
-                  />&nbsp;&nbsp;&nbsp;<label>Friends</label><br /><br /><br />
-                  <Input 
+                  />Friends</label><br /><br /><br />
+                  <label><Input 
+                  name='referral'
+                  id='web'
                   type='radio'
-                  />&nbsp;&nbsp;&nbsp;<label>Website</label><br /><br /><br />
-                  <Input 
+                  />Website</label><br /><br /><br />
+                  <label><Input 
+                  name='referral'
+                  id='media'
                   type='radio'
-                  />&nbsp;&nbsp;&nbsp;<label>Social Media</label><br /><br /><br />
-                  <Input 
+                  />Social Media</label><br /><br /><br />
+                  <label><Input 
+                  name='referral'
+                  id='others'
                   type='radio'
-                  />&nbsp;&nbsp;&nbsp;<label>Others</label><br /><br /><br />
+                  />Others</label><br /><br /><br />
                 </fieldset><br /><br /><br /><br />
-                <div className='registration-page__container__information__submit'>Submit</div> <br /><br /><br />
+                <button className='registration-page__container__information__submit' type='submit'>Submit</button> <br /><br /><br />
               </form>
             </div>
           </div>

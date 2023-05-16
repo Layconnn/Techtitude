@@ -1,5 +1,5 @@
 .registration-page{
-    background-color: #F5F5F5;
+    background: linear-gradient(0deg, rgba(204, 204, 255, 0.25), rgba(204, 204, 255, 0.25)), #FFFFFF;
     &__container{
         margin: auto;
         width: 90.8rem;
@@ -15,6 +15,7 @@
             }
             div{
                 display: flex;
+                font-family: 'BR Firma';
                 justify-content: center;
                 align-items: center;
                 border-radius: 0.6rem;
@@ -37,6 +38,7 @@
             &__input{
                 display: flex;
                 flex-wrap: wrap;
+                font-family: 'BR Firma';
                 width: 90.8rem;
                 height: 4rem;
                 padding-left: 1.4rem;
@@ -57,6 +59,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 width: 90.8rem;
+                font-family: 'BR Firma';
                 height: 4rem;
                 padding-left: 1.4rem;
                 font-weight: 400;
@@ -69,6 +72,8 @@
                 cursor: pointer;
                 justify-content: center;
                 align-items: center;
+                border: 1px solid #F5F5F5;
+                font-family: 'BR Firma';
                 background: #F0C20C;
                 font-weight: 700;
                 border-radius: 0.6rem;

@@ -1,8 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/swiper.min.css";
-import { EffectCoverflow, Pagination, Navigation } from 'swiper';
-import "swiper/css/effect-coverflow";
+import { Pagination, Navigation } from 'swiper';
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useNavigate } from 'react-router-dom';
@@ -63,117 +62,60 @@ function Home() {
             <h5>TESTIMONIALS</h5>
             <h3>What some of our Tranees have to say about us!</h3>
             <Swiper 
-            effect={'coverflow'}
-            grabCursor={true}
             loop={true}
             slidesPerView={1}
             pagination={ {  clickable: true } }
-            modules={[EffectCoverflow, Pagination, Navigation]}
+            modules={[ Pagination, Navigation]}
             className='fourth-section__all-rating'
             >
                 <SwiperSlide>
                   <div className='fourth-section__first-rating'>
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <h6>Hello Techtitude,While waiting for my fiancé visa to be approved in America, my husband suggested that I take the Business Analysis course. I am thrilled to share that I now work for one of the top 4 companies in America. I am truly grateful for your outstanding training and support. You guys are the best! I am excited to spread the word about Techtitude and recommend your services to everyone I know.</h6>
-                    <p className='fourth-section__first-rating__appreciation'>Thank you once again!</p>
+                    <p className='fourth-section__first-rating__star'>⭐⭐⭐⭐⭐</p>
+                    <div className='fourth-section__first-rating__message'>
+                        <h6>Hello Techtitude,</h6>
+                        <p className='fourth-section__first-rating__message__speech'>While waiting for my fiancé visa to be approved in America, my husband suggested that I take the Business Analysis course. I am thrilled to share that I now work for one of the top 4 companies in America. I am truly grateful for your outstanding training and support. You guys are the best! I am excited to spread the word about Techtitude and recommend your services to everyone I know.</p>
+                        <p className='fourth-section__first-rating__message__appreciation'>Thank you once again!</p>
+                    </div>
                     <div className='fourth-section__first-rating__bottom'>
                         <div className='fourth-section__first-rating__bottom__bottom-profile'></div>
-                        <span>
-                            <p className='fourth-section__first-rating__bottom__bottom-name'>Adejare Adegoke</p>
-                            <p>Product Design  - Lagos</p>
-                        </span>
+                        <div className='fourth-section__first-rating__bottom__items'>
+                            <p className='fourth-section__first-rating__bottom__name'>Olamide</p>
+                            <p className='fourth-section__first-rating__bottom__description'><i>Business Analysis</i></p>
+                        </div>
                     </div>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide >
                   <div className='fourth-section__first-rating'>
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <h6>For a training that is 100% practical, this was really good. I really can't thank Ingressive for Good and the Zuri Team enough. Keep helping willing minds. THANK YOU SO MUCH!</h6>
+                    <p className='fourth-section__first-rating__star'>⭐⭐⭐⭐⭐</p>
+                    <div className='fourth-section__first-rating__message'>
+                        <h6>Dear Techtitude,</h6>
+                        <p className='fourth-section__first-rating__message__speech'>Thank you for the excellent Cyber Security course! I now work at a top bank in Nigeria and thoroughly enjoyed the program.</p>
+                        <p className='fourth-section__first-rating__message__appreciation'>I highly recommend Techtitude! Ajoke</p>
+                    </div>
                     <div className='fourth-section__first-rating__bottom'>
                         <div className='fourth-section__first-rating__bottom__bottom-profile'></div>
-                        <span>
-                            <p className='fourth-section__first-rating__bottom__bottom-name'>Adejare Adegoke</p>
-                            <p>Product Design  - Lagos</p>
-                        </span>
+                        <div className='fourth-section__first-rating__bottom__items'>
+                            <p className='fourth-section__first-rating__bottom__name'>Ajoke</p>
+                            <p className='fourth-section__first-rating__bottom__description'><i>Cyber Security</i></p>
+                        </div>
                     </div>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide >
                   <div className='fourth-section__first-rating'>
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <h6>This is my first ever training in my journey into tech, but it definitely was worth it. I say this because I had tried studying on my own for months with not much progress, but coming across this training gave me a good feel of what this area of life truly entails. Thank you for having me, and expect me back in another cohort (the essence of this is accountability).</h6>
-                    <div className='fourth-section__first-rating__bottom'>
-                        <div className='fourth-section__first-rating__bottom__bottom-profile'></div>
-                        <span>
-                            <p className='fourth-section__first-rating__bottom__bottom-name'>Adejare Adegoke</p>
-                            <p>Product Design  - Lagos</p>
-                        </span>
+                    <p className='fourth-section__first-rating__star'>⭐⭐⭐⭐⭐</p>
+                    <div className='fourth-section__first-rating__message'>
+                        <h6>Hello Techtitude,</h6>
+                        <p className='fourth-section__first-rating__message__speech'>I had a fantastic time in your classes, and the mentoring session helped solidify my decision to pursue a career as a Business Analyst. This training surpassed my expectations and stood out among others. Thank you for providing exceptional education and guidance.</p>
+                        <p className='fourth-section__first-rating__message__appreciation'>I'm on my way to becoming a great BA, all thanks to Techtitude.</p>
                     </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide >
-                  <div className='fourth-section__first-rating'>
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <h6>For a training that is 100% practical, this was really good. I really can't thank Ingressive for Good and the Zuri Team enough. Keep helping willing minds. THANK YOU SO MUCH!</h6>
                     <div className='fourth-section__first-rating__bottom'>
                         <div className='fourth-section__first-rating__bottom__bottom-profile'></div>
-                        <span>
-                            <p className='fourth-section__first-rating__bottom__bottom-name'>Adejare Adegoke</p>
-                            <p>Product Design  - Lagos</p>
-                        </span>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className='fourth-section__first-rating'>
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <h6>For a training that is 100% practical, this was really good. I really can't thank Ingressive for Good and the Zuri Team enough. Keep helping willing minds. THANK YOU SO MUCH!</h6>
-                    <div className='fourth-section__first-rating__bottom'>
-                        <div className='fourth-section__first-rating__bottom__bottom-profile'></div>
-                        <span>
-                            <p className='fourth-section__first-rating__bottom__bottom-name'>Adejare Adegoke</p>
-                            <p>Product Design  - Lagos</p>
-                        </span>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide >
-                  <div className='fourth-section__first-rating'>
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <h6>Hello Techtitude,While waiting for my fiancé visa to be approved in America, my husband suggested that I take the Business Analysis course. I am thrilled to share that I now work for one of the top 4 companies in America. I am truly grateful for your outstanding training and support. You guys are the best! I am excited to spread the word about Techtitude and recommend your services to everyone I know.</h6>
-                    <div className='fourth-section__first-rating__bottom'>
-                        <div className='fourth-section__first-rating__bottom__bottom-profile'></div>
-                        <span>
-                            <p className='fourth-section__first-rating__bottom__bottom-name'>Adejare Adegoke</p>
-                            <p>Product Design  - Lagos</p>
-                        </span>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className='fourth-section__first-rating'>
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <h6>For a training that is 100% practical, this was really good. I really can't thank Ingressive for Good and the Zuri Team enough. Keep helping willing minds.</h6>
-                    <p className='fourth-section__first-rating__appreciation'>THANK YOU SO MUCH!</p>
-                    <div className='fourth-section__first-rating__bottom'>
-                        <div className='fourth-section__first-rating__bottom__bottom-profile'></div>
-                        <span>
-                            <p className='fourth-section__first-rating__bottom__bottom-name'>Adejare Adegoke</p>
-                            <p>Product Design  - Lagos</p>
-                        </span>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className='fourth-section__first-rating'>
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <h6>This is my first ever training in my journey into tech, but it definitely was worth it. I say this because I had tried studying on my own for months with not much progress, but coming across this training gave me a good feel of what this area of life truly entails. Thank you for having me, and expect me back in another cohort (the essence of this is accountability).</h6>
-                    <div className='fourth-section__first-rating__bottom'>
-                        <div className='fourth-section__first-rating__bottom__bottom-profile'></div>
-                        <span>
-                            <p className='fourth-section__first-rating__bottom__bottom-name'>Adejare Adegoke</p>
-                            <p>Product Design  - Lagos</p>
-                        </span>
+                        <div className='fourth-section__first-rating__bottom__items'>
+                            <p className='fourth-section__first-rating__bottom__name'>Anonymous</p>
+                            <p className='fourth-section__first-rating__bottom__description'><i>Business Analysis</i></p>
+                        </div>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -216,33 +158,33 @@ function Home() {
                 </div>
             </div>
             <div className='fifth-section__layout'>
-                <div className='fifth-section__layout__edit'>
-                    <div><img className='fifth-section__layout__edit__image' src="/images/second.png" /></div>
+                <div className='fifth-section__layout__edit2'>
+                    <img src="/images/second.png" />
                     <span>
-                        <p className='fifth-section__layout__edit__type'>Cyber Security </p>
-                        <p className='fifth-section__layout__edit__message'>Data Analysis will  help you differentiate yourself from other information technology and research workers who lack the same specialized knowledge as you. During your job search, you may have more job opportunities to pursue or qualify for more specialized positions</p>
-                        <div className='fifth-section__layout__edit__lower-sec'>
-                            <div className='fifth-section__layout__edit__lower-sec__btns'> 
-                                <div className='fifth-section__layout__edit__lower-sec__btns__btn1' onClick={() => route('/registration')}>Enroll Now!</div>
-                                <div className='fifth-section__layout__edit__lower-sec__btns__btn2'>Download Brochure</div>
+                        <p className='fifth-section__layout__edit2__type'>Cyber Security </p>
+                        <p className='fifth-section__layout__edit2__message'>Data Analysis will  help you differentiate yourself from other information technology and research workers who lack the same specialized knowledge as you. During your job search, you may have more job opportunities to pursue or qualify for more specialized positions</p>
+                        <div className='fifth-section__layout__edit2__lower-sec'>
+                            <div className='fifth-section__layout__edit2__lower-sec__btns'> 
+                                <div className='fifth-section__layout__edit2__lower-sec__btns__btn1' onClick={() => route('/registration')}>Enroll Now!</div>
+                                <div className='fifth-section__layout__edit2__lower-sec__btns__btn2'>Download Brochure</div>
                             </div>
-                            <p className='fifth-section__layout__edit__lower-sec__price'>#100,000</p>
+                            <p className='fifth-section__layout__edit2__lower-sec__price'>#100,000</p>
                         </div>
                     </span>
                 </div>
             </div>
-            <div className='fifth-section__fourth-layout'>
-                <div className='fifth-section__layout__edit'>
+            <div className='fifth-section__layout'>
+                <div className='fifth-section__layout__edit3'>
                     <div><img src="/images/third.png" /></div>
                     <span>
-                        <p className='fifth-section__fourth-layout__edit__type'>UI/UX Design</p>
-                        <p className='fifth-section__fourth-layout__edit__message'>Learn the skills to create visually appealing and user-friendly interfaces. Our UI/UX Design track will teach you the principles of design, user research, wireframing, prototyping, and more. You'll gain practical experience by completing a variety of tasks, including designing web and mobile applications, creating user personas, and conducting usability testing.</p>
-                        <div className='fifth-section__fourth-layout__edit__lower-sec'>
-                            <div className='fifth-section__fourth-layout__edit__lower-sec__btns'> 
-                                <div className='fifth-section__fourth-layout__edit__lower-sec__btns__btn1' onClick={() => route('/registration')}>Enroll Now!</div>
-                                <div className='fifth-section__fourth-layout__edit__lower-sec__btns__btn2'>Download Brochure</div>
+                        <p className='fifth-section__layout__edit3__type'>UI/UX Design</p>
+                        <p className='fifth-section__layout__edit3__message'>Learn the skills to create visually appealing and user-friendly interfaces. Our UI/UX Design track will teach you the principles of design, user research, wireframing, prototyping, and more. You'll gain practical experience by completing a variety of tasks, including designing web and mobile applications, creating user personas, and conducting usability testing.</p>
+                        <div className='fifth-section__layout__edit3__lower-sec'>
+                            <div className='fifth-section__layout__edit3__lower-sec__btns'> 
+                                <div className='fifth-section__layout__edit3__lower-sec__btns__btn1' onClick={() => route('/registration')}>Enroll Now!</div>
+                                <div className='fifth-section__layout__edit3__lower-sec__btns__btn2'>Download Brochure</div>
                             </div>
-                            <p className='fifth-section__fourth-layout__edit__lower-sec__price'>#150,000</p>
+                            <p className='fifth-section__layout__edit3__lower-sec__price'>#150,000</p>
                         </div>
                     </span>
                 </div>
@@ -280,7 +222,11 @@ function Home() {
             <div className='footer-section__bottom'>
                 <img src='/images/white-logo.png' />
                 <div className='footer-section__bottom__class'>
-                        <h6>COURSES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSTRUCTIONS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TESTIMONIALS</h6>
+                    <div className='footer-section__bottom__class__links'>
+                        <h6>COURSES</h6>
+                        <h6>INSTRUCTIONS</h6>
+                        <h6>TESTIMONIALS</h6>
+                    </div>
                     <div className='footer-section__bottom__class__description'>
                         <h6>7 Adedotun Dina, Mende, Maryland,Lagos-Nigeria.</h6>
                         <h6>admin@techtitude.org</h6>
@@ -291,7 +237,7 @@ function Home() {
                     <h6><b> Like to receive our Newsteller?</b></h6>
                     <div className='footer-section__bottom__input__search'>
                         <input placeholder='Enter your Email Here'></input>
-                        <button>Read More</button>
+                        <div className='footer-section__bottom__input__search__button'>Read More</div>
                     </div>
                     <img src='/images/vector.png' />
                 </div>
