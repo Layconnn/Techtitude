@@ -35,7 +35,7 @@ function Home() {
                 </div>
                 <img src="/images/girl-pic.png" className="second-section__girl-picture" />
             </div>
-        </div>
+        </div> 
         <div className='third-section'>
             <div className='third-section__profile'>
                 <div className='third-section__profile__img'><img src='/images/internship.png' /></div> <br />

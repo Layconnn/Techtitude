@@ -1,30 +1,32 @@
 import React from 'react'
 import Input from '../components/input'
 import { useState } from 'react'
-import axios from 'axios'
+import Api from '../api/api'
 
 function RegistrationPage() {
+  const url = 'https://products-curd-api.netlify.app/.netlify/functions/api/products'
 const [data, setData] = useState({
   name: '',
   quantity: '',
-  image: '',
-  price: ''
-})
+  price: '',
+  image: ''
+});
 
 const handleChange = (e) => {
-  const value = e.target.value;
-  setData({...data, [e.target.name]: value});
-}
+  const newData = {...data}
+  newData[e.target.name] = e.target.value;
+  setData(newData)
+};
 
 const handleSubmit = (e) => {
-  e.preventDefault();
-  const userInfo = {
-    name: data.name,
-    quantity: data.quantity,
-    image: data.image,
-    price: data.price,
-  };
-    axios.post('https://products-curd-api.netlify.app/.netlify/functions/api/products', userInfo ).then((response) => {console.log(response.data.status)} );
+    Api.post(url, {
+      name: data.name,
+      quantity: data.quantity,
+      price: data.price,
+      image: data.image
+    } )
+    .then((response) => {console.log(response.data)} )
+    .catch(err => console.log(err));
 };
 
   return (
@@ -37,36 +39,39 @@ const handleSubmit = (e) => {
               <div>COURSE REGISTRATION</div>
             </div>
             <div className='registration-page__container__information'>
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={(e) => handleSubmit(e)}>
                 <label>First Name</label><br/>
                   <Input 
                   value={data.name}
+                  name='name'
                   type='text'
-                  onChange={handleChange}
+                  onChange={(e) => handleChange(e)}
                   placeholder='e.g. Daniel'
                   className='registration-page__container__information__input'
                   /><br /><br /><br /><br />
                 <label>Last Name</label><br/>
                   <Input 
                   value={data.quantity}
-                  type='text'
-                  onChange={handleChange}
+                  name='quantity'
+                  type='number'
+                  onChange={(e) => handleChange(e)}
                   placeholder='e.g. Olabanji'
                   className='registration-page__container__information__input'
                   /><br /><br /><br /><br />
                 <label>Email</label><br/>
                   <Input 
-                  value={data.image}
-                  onChange={handleChange}
                   placeholder='e.g. daniel.olabanji@gmail.com'
+                  name='price'
+                  type='number'
+                  onChange={(e) => handleChange(e)}
                   className='registration-page__container__information__input'
                   /><br /><br /><br /><br />
                 <label>Phone Number</label><br/>
                   <Input 
-                  value={data.price}
-                  type='number'
-                  onChange={handleChange}
                   placeholder='e.g. 09012345678'
+                  name='image'
+                  type='text'
+                  onChange={(e) => handleChange(e)}
                   className='registration-page__container__information__input'
                   /><br /><br /><br /><br />
                 <label>Date of Birth</label><br/>
